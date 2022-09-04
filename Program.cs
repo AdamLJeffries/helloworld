@@ -10,8 +10,9 @@ internal class Program
         {
             Console.WriteLine("Hello, World!");
             string input = Console.ReadLine().ToLower();
+            string[] exitCmds = { "exit", "terminate", "stop", "quit", "end" };
 
-            if (input == "exit" )
+            if (exitCmds.Contains(input))
             {
                 open = false;
             };
